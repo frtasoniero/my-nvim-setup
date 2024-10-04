@@ -1,17 +1,10 @@
 return {
-    -- {
-    --     "vhyrro/luarocks.nvim",
-    --     priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
-    --     config = true,
-    -- },
-
     {
         "stevearc/conform.nvim",
         event = "BufWritePre", -- uncomment for format on save
         opts = require("configs.conform"),
     },
 
-    -- These are some examples, uncomment them if you want to see them work!
     {
         "neovim/nvim-lspconfig",
         config = function()
@@ -69,6 +62,18 @@ return {
             require("notify").setup({
                 background_colour = "#000000",
             })
-        end
+        end,
+    },
+
+    {
+        "windwp/nvim-ts-autotag",
+        dependencies = "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("nvim-ts-autotag").setup({
+                -- your config
+            })
+        end,
+        lazy = true,
+        event = "VeryLazy",
     },
 }

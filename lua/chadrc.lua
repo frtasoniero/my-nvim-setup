@@ -22,8 +22,11 @@ M.nvdash = {
 M.mason = {
     pkgs = {
         "typescript-language-server",
-        "eslint-lsp",
-        "prettier",
+        "html-lsp",
+        "css-lsp",
+        "lua-language-server",
+        "clangd",
+        "gopls",
     },
 }
 
