@@ -1,18 +1,9 @@
--- This file needs to have same structure as nvconfig.lua
--- https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua
--- Please read that file to know all available options :(
-
 ---@type ChadrcConfig
 local M = {}
 
 M.base46 = {
     theme = "tokyonight",
     transparency = true,
-
-    -- hl_override = {
-    -- 	Comment = { italic = true },
-    -- 	["@comment"] = { italic = true },
-    -- },
 }
 
 M.nvdash = {
@@ -27,6 +18,13 @@ M.mason = {
         "lua-language-server",
         "clangd",
         "gopls",
+        "prisma-language-server",
+        "json-lsp",
+        "dockerfile-language-server",
+        "docker-compose-language-service",
+        "bash-language-server",
+        "pyright",
+        "tailwindcss-language-server",
     },
 }
 

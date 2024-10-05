@@ -1,7 +1,7 @@
 return {
     {
         "stevearc/conform.nvim",
-        event = "BufWritePre", -- uncomment for format on save
+        event = "BufWritePre",
         opts = require("configs.conform"),
     },
 
@@ -43,11 +43,7 @@ return {
         "folke/noice.nvim",
         event = "VeryLazy",
         dependencies = {
-            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
             "MunifTanjim/nui.nvim",
-            -- OPTIONAL:
-            --   `nvim-notify` is only needed, if you want to use the notification view.
-            --   If not available, we use `mini` as the fallback
             "rcarriga/nvim-notify",
         },
         config = function()
@@ -69,9 +65,7 @@ return {
         "windwp/nvim-ts-autotag",
         dependencies = "nvim-treesitter/nvim-treesitter",
         config = function()
-            require("nvim-ts-autotag").setup({
-                -- your config
-            })
+            require("nvim-ts-autotag")
         end,
         lazy = true,
         event = "VeryLazy",

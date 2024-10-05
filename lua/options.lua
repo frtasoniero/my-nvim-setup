@@ -1,6 +1,4 @@
-require "nvchad.options"
-
--- add yours here!
+require("nvchad.options")
 
 local o = vim.o
 o.expandtab = true
