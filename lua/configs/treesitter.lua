@@ -21,6 +21,7 @@ local options = {
         "css",
         "javascript",
         "typescript",
+        "prisma",
         "sql",
     },
 
