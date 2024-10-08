@@ -25,6 +25,7 @@ M.mason = {
         "bash-language-server",
         "pyright",
         "tailwindcss-language-server",
+        "eslint_d",
     },
 }
 
